@@ -13,6 +13,7 @@ jobs:
       - name: Generate Top Languages Card
         uses: stats-organization/github-readme-stats-action@v2
         with:
+          card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
